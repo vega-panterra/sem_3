@@ -10,3 +10,8 @@
 // градусы Фаренгейта = (9 / 5) * градусы Цельсия + 32
 // Примечания: Пользователь всегда вводит корректное число.
 // Советую округлить значение после расчетов, так как в некоторых случаях может получиться "длинная дробь".
+
+const temperatureCelsius = parseInt(prompt('Введите температуру в градусах Цельсия'));
+const temperatureFahrenheit = (9 / 5) * temperatureCelsius + 32;
+
+alert(`Цельсий: ${temperatureCelsius}, Фаренгейт: ${temperatureFahrenheit.toFixed(1)}`);
